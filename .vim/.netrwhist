@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/hexterisk/Work/blog/themes/hello-friend-ng/layouts'
+let g:netrw_dirhist_5='/home/hexterisk/Work/blog/themes/hello-friend-ng/assets'
+let g:netrw_dirhist_4='/home/hexterisk/Work/hexterisk.github.io/blog/themes/hello-friend-ng/layouts'
+let g:netrw_dirhist_3='/home/hexterisk/Work/hexterisk.github.io/blog'
+let g:netrw_dirhist_2='/home/hexterisk/Work/hexterisk.github.io/blog/static'
+let g:netrw_dirhist_1='/usr/lib/locale'
