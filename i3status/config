@@ -1,0 +1,54 @@
+general {
+        colors = true
+        interval = 5
+}
+
+order += "cpu_usage"
+order += "disk /"
+order += "wireless _first_"
+order += "battery all"
+order += "memory"
+order += "tztime local"
+
+volume master {
+        format = " %volume"
+        format_muted = ""
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+cpu_usage {
+        format= " %cpu0 %cpu1 %cpu2 %cpu3"
+        max_threshold= 75
+}
+
+wireless _first_ {
+        format_up = " %quality of %essid at %ip"
+        format_down = "DISCONNECTED"
+}
+
+battery all {
+        format = "%status %percentage %remaining"
+        format_down = ""
+        status_chr = ""
+        status_bat = "BAT"
+        status_unk = ""
+        status_full = ""
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+tztime local {
+        format = "%d-%m-%Y %H:%M"
+}
+
+memory {
+        format = " %percentage_used"
+        threshold_degraded = "10%"
+        format_degraded = "%free"
+}
+
+disk "/" {
+        format = " %avail"
+}

@@ -54,24 +54,25 @@ XTerm*selectToClipboard: true
 *color7:                          #d8d8d8
 *color15:                         #f8f8f8
 
-Xcursor.theme: xcursor-breeze
+Xcursor.theme: Maia-Cursor
 Xcursor.size:                     0
 
-! URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
-URxvt.font:     xft:bitstream vera sans mono:size=13:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=13:antialias=true
+URxvt.font:                       xft:bitstream vera sans mono:size=15:antialias=true:minspace=False, xft:DejaVu Sans:pixelsize=18
+! URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono:minspace=False, xft:DejaVu Sans:pixelsize=18
+! URxvt*font:                 xft:Inconsolata Nerd Font Mono:pixelsize=20:minspace=False, xft:DejaVu Sans:pixelsize=18
+
 ! alternative font settings with 'terminus':
 ! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
 ! URxvt.bold.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
-! terminus names see end of file
+!! terminus names see end of file!
 
-URxvt*termName: 		  rxvt-unicode-256color
 URxvt.depth:                      32
+URxvt.background:                 black
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
-URxvt*background:		  #000000
-URxvt*foreground: 		  #DEDAC5
+URxvt*background:                 black
+URxvt*foreground:                 grey
 URxvt*saveLines:                  5000
 
 ! for 'fake' transparency (without Compton) uncomment the following three lines
@@ -96,6 +97,7 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! URxvt.keysym.M-C-c:               perl:clipboard:copy
 ! URxvt.keysym.M-v:                 perl:clipboard:paste
 ! URxvt.keysym.M-C-v:               perl:clipboard:paste_escaped
+! URxvt*termName:                   string
 ! URxvt*geometry:                   geometry
 ! URxvt*chdir:                      string
 ! URxvt*loginShell:                 boolean
@@ -111,7 +113,7 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! URxvt*scrollTtyOutput:            boolean
 ! URxvt*scrollTtyKeypress:          boolean
 ! URxvt*scrollWithBuffer:           boolean
-! URxvt*tintColor:                  7DA55
+! URxvt*tintColor:                  !7DA55
 ! URxvt*blurRadius:                 HxV
 ! URxvt*fading:                     number
 ! URxvt*fadeColor:                  color
@@ -176,7 +178,7 @@ URxvt*colorBD: #FF3A2A
 ! URxvt*internalBorder:             number
 ! URxvt*borderLess:                 true
 ! URxvt*lineSpace:                  number
-URxvt*letterSpace: 1
+! URxvt*letterSpace:                1
 ! URxvt*skipBuiltinGlyphs:          boolean
 ! URxvt*pointerBlankDelay:          number
 ! URxvt*backspacekey:               string
@@ -249,8 +251,7 @@ XLock.username: User:
 XLock.password: S/Key:         
 XLock.icongeometry: 150x150         
 XLock.enablesaver: on
-XLock.font: -*-fixed-medium-r-*-*-14-*-*-*-*-*-*
-XLock.planfont: -*-fixed-medium-r-*-*-14-*-*-*-*-*-*
-XLock.fontset: -*-fixed-medium-r-*-*-14-*-*-*-*-*-*
-XLock.planfontset: -*-fixed-medium-r-*-*-14-*-*-*-*-*-*
-            
+XLock.font: 9x15,xft:TerminessTTFNerdFontMono:minspace=false
+XLock.planfont: 9x15,xft:TerminessTTFNerdFontMono:minspace=false
+XLock.fontset:  9x15,xft:TerminessTTFNerdFontMono:minspace=false
+XLock.planfontset:  9x15,xft:TerminessTTFNerdFontMono:minspace=false

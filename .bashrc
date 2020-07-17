@@ -90,17 +90,11 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-export PS1="\[\e[31m\]\u\[\e[m\]@\[\e[31m\]\h\[\e[m\]-[\[\e[32m\]\W\[\e[m\]]->> "
-
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
-
-alias warm='redshift -P -O 3500'
-alias ida64="wine 'C:/Program Files/IDA 7.0/ida64.exe'"
-alias ida="wine 'C:/Program Files/IDA 7.0/ida.exe'"
 
 xhost +local:root > /dev/null 2>&1
 
